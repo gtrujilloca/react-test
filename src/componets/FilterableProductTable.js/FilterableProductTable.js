@@ -1,6 +1,7 @@
 import React from 'react'
 import ProductTable from '../ProductTable/ProductTable'
 import Searchbar from '../SearchBar/Searchbar'
+import './filterable.css';
 
 const FilterableProductTable = () => {
   const sportings = [
@@ -14,10 +15,10 @@ const FilterableProductTable = () => {
     {name: 'Nexus 7', price: '$199.99'},
   ]
   return (
-    <>
+    <div className="content">
       <Searchbar />
       <ProductTable sportings={sportings} electronics={electronics}/>
-    </>
+    </div>
   )
 }
 

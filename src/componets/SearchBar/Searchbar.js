@@ -1,8 +1,9 @@
 import React from 'react'
+import './search.css'
 
 const Searchbar = () => {
   return (
-    <div>
+    <div className="search">
       <input placeholder="Search..."/>
       <br/>
       <input type="checkbox" id="check"/>

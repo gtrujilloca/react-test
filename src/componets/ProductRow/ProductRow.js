@@ -1,10 +1,11 @@
 import React from 'react'
+import './productRow.css'
 
 const ProductRow = ({name = "",price = ""}) => {
   return (
-    <tr>
-      <td>{name}</td>
-      <td>{price}</td>
+    <tr >
+      <td className="row">{name}</td>
+      <td className="row">{price}</td>
     </tr>
   )
 }

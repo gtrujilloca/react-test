@@ -1,12 +1,13 @@
 import React from 'react'
 import ProductCategoryRow from '../ProductCategoryRow/ProductCategoryRow'
 import ProductRow from '../ProductRow/ProductRow'
+import './productTable.css'
 
 const ProductTable = ({sportings=[], electronics=[]}) => {
   return (sportings.length) <= 0 ?
     <h1>No hay datos</h1> :
     (
-      <table border="1">
+      <table className="table">
         <thead>
         <tr>
           <th>Name</th>
